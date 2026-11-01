@@ -1,0 +1,24 @@
+# PlatformIO build output and editor state
+.pio/
+.vscode/
+
+# Per-device settings (copy the *.example.h templates)
+firmware/include/secrets.h
+data-collection/swimtrack-sender/src/config_local.h
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Recorded sessions and analysis output. Raw recordings stay local.
+data-collection/swimtrack-tools/*.csv
+data-collection/swimtrack-tools/*.png
+data-collection/swimtrack-tools/stroke_classifier.txt
+data-collection/swimtrack-tools/stroke_classifier.inc
+
+# OS files
+.DS_Store
+Thumbs.db
