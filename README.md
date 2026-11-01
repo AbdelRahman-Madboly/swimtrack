@@ -86,3 +86,7 @@ placeholder password and prints a compiler warning.
 MIT. See [LICENSE](LICENSE).
 
 Source: <https://github.com/VINEX-Tech/swimtrack>
+
+## Author
+
+Designed and built by Abdel Rahman Mohamad EL-Sayed ([AbdelRahman-Madboly](https://github.com/AbdelRahman-Madboly) on GitHub) as a VINEX product.
