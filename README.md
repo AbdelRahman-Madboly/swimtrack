@@ -2,28 +2,38 @@
 
 <img src="docs/readme-icon.png" width="96" align="right" alt="SwimTrack icon">
 
-**Status: Prototype / MVP, dry-land tested only.**
-
 SwimTrack is a wrist-worn swim training prototype. An ESP32-S2 board reads an
 MPU-6500 motion sensor at 50 Hz, counts strokes and laps on the device, and
 serves the results over its own WiFi access point. A Flutter app starts and
 stops sessions, shows live numbers and keeps a session history on the phone.
 
-The detection thresholds come from one dry-land session (arm movements at a
-desk). Nothing in this repository has been tested in a pool.
+**Status: Prototype / MVP, dry-land tested only.** The detection thresholds come
+from one dry-land session (arm movements at a desk). Nothing in this repository
+has been tested in a pool.
+
+| The band | Band and app |
+|---|---|
+| ![SwimTrack band on a wrist at the pool](docs/images/concept-band.jpg) | ![SwimTrack band next to the app's session result](docs/images/concept-kit.jpg) |
+
+Concept images of the planned band, not photos of a built unit. The prototype
+board has no case yet.
 
 ## Demo
 
-A poolside dry-land run: the swimmer wears the board on the wrist and swims the
-strokes standing on the pool deck while the app records the session, then the
-app shows strokes, stroke rate, laps and SWOLF per lap. The swimmer is not in
-the water.
+A poolside dry-land run. The swimmer wears the board on the wrist and swims the
+strokes standing on the pool deck while the app records; the count goes up with
+each stroke. At the end the app shows strokes, stroke rate, laps and SWOLF per
+lap. The swimmer is not in the water.
 
-| Strokes on the deck | Session result in the app |
-|---|---|
-| [![Poolside dry-land test](docs/media/swimtrack-poolside-test.gif)](docs/media/swimtrack-poolside-test.mp4) | ![Session result](docs/media/swimtrack-app-result.jpg) |
+<table>
+<tr><th>Strokes counted on the deck (18 s, click for the full video)</th><th>Session result in the app</th></tr>
+<tr>
+<td><a href="docs/media/swimtrack-poolside-test.mp4"><img src="docs/media/swimtrack-poolside-test.gif" width="270" alt="Poolside dry-land test"></a></td>
+<td><img src="docs/media/swimtrack-app-result.jpg" width="270" alt="Session result in the app"></td>
+</tr>
+</table>
 
-Full video (2 min): [`docs/media/swimtrack-poolside-test.mp4`](docs/media/swimtrack-poolside-test.mp4).
+**[Watch the full video (2 min, MP4)](docs/media/swimtrack-poolside-test.mp4)**
 
 ## Hardware
 
