@@ -1,5 +1,7 @@
 # SwimTrack
 
+<img src="docs/readme-icon.png" width="96" align="right" alt="SwimTrack icon">
+
 **Status: Prototype / MVP, dry-land tested only.**
 
 SwimTrack is a wrist-worn swim training prototype. An ESP32-S2 board reads an
@@ -22,6 +24,18 @@ the water.
 | [![Poolside dry-land test](docs/media/swimtrack-poolside-test.gif)](docs/media/swimtrack-poolside-test.mp4) | ![Session result](docs/media/swimtrack-app-result.jpg) |
 
 Full video (2 min): [`docs/media/swimtrack-poolside-test.mp4`](docs/media/swimtrack-poolside-test.mp4).
+
+## Hardware
+
+| Part | Used | Notes |
+|---|---|---|
+| Microcontroller | LOLIN S2 Mini (ESP32-S2) | Native USB, own WiFi access point for the app |
+| Motion sensor | GY-6500 breakout (MPU-6500) | I2C on GPIO33/34, +/-8 g and +/-1000 dps at 50 Hz |
+| Button and LED | BOOT button (GPIO0), on-board LED (GPIO15) | Start and stop, 3 s press resets |
+| Power | USB | A LiPo and charger board are planned, not fitted |
+| Capture rig | Second S2 Mini on the wrist plus an ESP32 receiver on USB | ESP-NOW, for recording labelled stroke data |
+
+There is no printed wrist case yet. Wiring and pin use are in [`docs/hardware.md`](docs/hardware.md).
 
 ## Repository layout
 
