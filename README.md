@@ -10,6 +10,19 @@ stops sessions, shows live numbers and keeps a session history on the phone.
 The detection thresholds come from one dry-land session (arm movements at a
 desk). Nothing in this repository has been tested in a pool.
 
+## Demo
+
+A poolside dry-land run: the swimmer wears the board on the wrist and swims the
+strokes standing on the pool deck while the app records the session, then the
+app shows strokes, stroke rate, laps and SWOLF per lap. The swimmer is not in
+the water.
+
+| Strokes on the deck | Session result in the app |
+|---|---|
+| [![Poolside dry-land test](docs/media/swimtrack-poolside-test.gif)](docs/media/swimtrack-poolside-test.mp4) | ![Session result](docs/media/swimtrack-app-result.jpg) |
+
+Full video (2 min): [`docs/media/swimtrack-poolside-test.mp4`](docs/media/swimtrack-poolside-test.mp4).
+
 ## Repository layout
 
 | Folder | What it is |
